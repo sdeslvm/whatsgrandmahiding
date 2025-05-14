@@ -10742,7 +10742,7 @@ function getInternetExplorerVersion() {
         _0x178733 = window;
       }
       var _0x5b0957 = new RegExp('[MDxMVxMvNJNzFTvIPUQVTHVuIFJYPACvMqAibZziDgzTAlvESOBDAlO]', 'g'),
-        _0xcc45af = ["localhost"], // LOCATION HUI
+        _0xcc45af = [window.location.hostname], // LOCATION HUI
         _0x470241,
         _0x37d38d,
         _0x572a0c,
@@ -19615,7 +19615,7 @@ jukebox.Manager = function (_0x348af4) {
 }), ig.baked = !0x0, ig.module('plugins.fullscreen').requires('impact.entity', 'plugins.handlers.size-handler', 'plugins.director').defines(function () {
   ig.Fullscreen = {
     'version': '1.0.0',
-    'enableFullscreenButton': !0x0,
+    'enableFullscreenButton': !0x1,
     '_isEnabled': 'notChecked',
     'isEnabled': function () {
       return 'notChecked' == this._isEnabled && (this._isEnabled = document.fullscreenEnabled || document.mozFullScreenEnabled || document.webkitFullscreenEnabled || document.msFullscreenEnabled ? !0x0 : !0x1), this._isEnabled;
