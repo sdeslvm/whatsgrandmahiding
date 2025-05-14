@@ -41,7 +41,7 @@ var _STRINGS = {
       'Chat': 'CHAT',
       'ClueFound': "CLUE FOUND",
       'Travel': "Moving to ",
-      'FreeCoins': "FREE COINS",
+      // 'FreeCoins': "FREE COINS",
       'MoreGames': "MORE GAMES",
       'Previous': 'PREVIOUS',
       'Next': 'NEXT',
@@ -7263,9 +7263,9 @@ var _STRINGS = {
       }
     },
     'MoreGames': {
-      'Enabled': !0x0,
-      'Link': 'http://www.marketjs.com/game/links/mobile',
-      'NewWindow': !0x0
+      'Enabled': !0x1,
+      'Link': '',
+      'NewWindow': !0x1
     },
     'Gamecenter': {
       'Enabled': !0x0
@@ -15797,11 +15797,11 @@ jukebox.Manager = function (_0x348af4) {
       this.parent(), this.responsive && (this.pos = ig.responsive.toAnchor(-this.main.windowBox.size.x / 0x2 + this.respTween, -this.main.windowBox.size.y / 0x2, 'center-middle'));
     },
     'draw': function () {
-      if (this.isShow) {
-        this.parent();
-        var _0x4cffa0 = ig.system.context;
-        _0x4cffa0.save(), _0x4cffa0.fillStyle = '#000000', _0x4cffa0.globalAlpha = 0.5, this.responsive ? _0x4cffa0.fillRect(0x0, 0x0, ig.responsive.width, ig.responsive.height) : _0x4cffa0.fillRect(0x0, 0x0, this.gameResolution.x, this.gameResolution.y), _0x4cffa0.globalAlpha = this.objAlpha, _0x4cffa0.drawImage(this.main.windowBox.img.data, this.pos.x, this.pos.y, this.main.windowBox.size.x, this.main.windowBox.size.y), _0x4cffa0.font = this.main.windowBox.titleFont, _0x4cffa0.fillStyle = this.main.windowBox.titleFillStyle, _0x4cffa0.textBaseline = 'middle', _0x4cffa0.textAlign = 'center', _0x4cffa0.fillText(_STRINGS.Game.FreeCoins, this.pos.x + this.main.windowBox.title_posOffset.x, this.pos.y + this.main.windowBox.title_posOffset.y), _0x4cffa0.font = this.main.windowBox.descFont, _0x4cffa0.fillStyle = this.main.windowBox.descFillStyle, _0x4cffa0.textBaseline = 'middle', _0x4cffa0.textAlign = 'center', _0x4cffa0.fillText(_STRINGS.Game.WatchVideo, this.pos.x + this.main.windowBox.desc_posOffset.x, this.pos.y + this.main.windowBox.desc_posOffset.y), _0x4cffa0.globalAlpha = 0x1, _0x4cffa0.restore();
-      }
+      // if (this.isShow) {
+      //   this.parent();
+      //   var _0x4cffa0 = ig.system.context;
+      //   // _0x4cffa0.save(), _0x4cffa0.fillStyle = '#000000', _0x4cffa0.globalAlpha = 0.5, this.responsive ? _0x4cffa0.fillRect(0x0, 0x0, ig.responsive.width, ig.responsive.height) : _0x4cffa0.fillRect(0x0, 0x0, this.gameResolution.x, this.gameResolution.y), _0x4cffa0.globalAlpha = this.objAlpha, _0x4cffa0.drawImage(this.main.windowBox.img.data, this.pos.x, this.pos.y, this.main.windowBox.size.x, this.main.windowBox.size.y), _0x4cffa0.font = this.main.windowBox.titleFont, _0x4cffa0.fillStyle = this.main.windowBox.titleFillStyle, _0x4cffa0.textBaseline = 'middle', _0x4cffa0.textAlign = 'center', _0x4cffa0.fillText(_STRINGS.Game.FreeCoins, this.pos.x + this.main.windowBox.title_posOffset.x, this.pos.y + this.main.windowBox.title_posOffset.y), _0x4cffa0.font = this.main.windowBox.descFont, _0x4cffa0.fillStyle = this.main.windowBox.descFillStyle, _0x4cffa0.textBaseline = 'middle', _0x4cffa0.textAlign = 'center', _0x4cffa0.fillText(_STRINGS.Game.WatchVideo, this.pos.x + this.main.windowBox.desc_posOffset.x, this.pos.y + this.main.windowBox.desc_posOffset.y), _0x4cffa0.globalAlpha = 0x1, _0x4cffa0.restore();
+      // }
     },
     'show': function () {
       this.isShow = !0x0;
@@ -21494,9 +21494,6 @@ jukebox.Manager = function (_0x348af4) {
           'r': 0xff,
           'g': 0xff,
           'b': 0xff
-        }, _0x3b88b9.textAlpha = 0x1, _0x3b88b9.textShadowDisabled = !0x0, _0x3b88b9.setFont(0x28, "roboto, sans-serif"), _0x3b88b9.setText(_STRINGS.Game.FreeCoins), _0x3b88b9.clickedFunction = this.onCoins.bind(this), _0x3b88b9.overOffset = {
-          'x': 0x0,
-          'y': -0x1
         }, _0x3b88b9.downOffset = {
           'x': 0x0,
           'y': 0x2
